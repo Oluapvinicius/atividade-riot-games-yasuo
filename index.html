@@ -4,61 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/86031a9762.js" crossorigin="anonymous"></script>
     <title>Riot-Games-Yasuo</title>
-    <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'riot-dark': '#0A0A0C',
+                        'riot-gold': '#C8AA6E',
+                        'riot-light': '#F0E6D2',
+                        'riot-red': '#9A2A2A',
+                    }
+                }
+            }
         }
-      </style>
+    </script>
 </head>
 
-<body>
-    <footer  class="fixed w-full h-20 bg-green-100 flex justify-between items-center">
-        
-        
-        <img src="./img/riot.png" alt="imagem riot">
-        
+<body class="text-riot-light">
+  
+    <div class="fixed inset-0 -z-50">
+        <img src="img/rena.png" alt="Background" class="w-full h-full object-cover">
+        <img src="img/Rectangle 2.png" alt="Overlay" class="absolute inset-0 w-full h-full object-cover opacity-70">
+    </div>
 
-        <ul class="flex items-center justify-center w-8 h-8 space-x-5">
-            
-            <li>
-                HOME
-            </li>
-            <li>
-                STORE
-            </li>
-            <li>
-                CHAMPION
-            </li>
-            <li>
-                ABOUT
-            </li>
-            <li>
-                BLOG
-            </li>
-        </ul>
-
-        <div>
-
-        <div>
-            <a href="#">
-                <img src="./img/lupa.png" alt="">
-            </a>
-        </div>
-            
-        
-      <a href="#">
-       <i class="fa-solid fa-cart-shopping"></i>
-     </a>
-        
-        
-        
-        </div>
     
-         
+    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-70 backdrop-blur-sm py-4 px-8 flex justify-between items-center border-b border-riot-gold border-opacity-20 z-50 mt-5 mr-5 ml-5 rounded-2xl">
+
+        <img src="./img/riot.png" alt="Riot Games Logo" class="h-10">
+        
+        <ul class="hidden md:flex space-x-8">
+            <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200">HOME</a></li>
+            <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200">STORE</a></li>
+            <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200">CHAMPION</a></li>
+            <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200">ABOUT</a></li>
+            <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200">BLOG</a></li>
+        </ul>
+        
+        <div class="flex items-center space-x-6">
+            <div class="relative hidden md:block">
+                <input 
+                    type="text" 
+                    
+                    class="bg-riot-dark border border-riot-gold border-opacity-30 rounded-sm py-1 px-4 pr-10 text-riot-light focus:outline-none focus:ring-1 focus:ring-riot-gold w-64 transition-all duration-200"
+                >
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-riot-gold hover:text-riot-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="relative">
+                <button class="text-riot-light hover:text-riot-gold transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <span class="absolute -top-2 -right-2 bg-riot-red text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                    3
+                </span>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="relative pt-24 min-h-screen">
+        <div class="flex items-center justify-center h-[calc(100vh-6rem)]">
+            <img src="img/imagem.png" alt="Yasuo" class="max-w-full h-[1100px] ">
+        </div>
+    </main>
+
+    
+        
+        </div>
     </footer>
-    <main></main>
 </body>
 </html>
