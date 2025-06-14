@@ -1,0 +1,1 @@
+"# ss"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Oluapvinicius/atividade-riot-games-yasuo.git push -u origin main
