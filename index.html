@@ -1,137 +1,110 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://kit.fontawesome.com/86031a9762.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Beaufort+for+LOL:wght@400;700&family=Spiegel&display=swap" rel="stylesheet">
-        <title>Riot-Games-Yasuo</title>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'riot-dark': '#0A0A0C',
-                            'riot-gold': '#C8AA6E',
-                            'riot-light': '#F0E6D2',
-                            'riot-red': '#9A2A2A',
-                        },
-                        boxShadow: {
-                            'bottom-glow': '0 4px 10px -2px rgba(255, 255, 255, 0.3)',
-                            'bottom-gold-glow': '0 4px 15px -2px rgba(200, 170, 110, 0.5)'
-                        },
-                        fontFamily: {
-                            'beaufort': ['"Beaufort for LOL"', 'serif'],
-                            'spiegel': ['Spiegel', 'sans-serif']
-                        }
-                    }
-                }
-            }
-        </script>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <body class="text-riot-light font-spiegel grow">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+  <title>Riot Games</title>
+</head>
 
-        <div class="absolute inset-0 -z-50">
-            <img src="img/rena.png" alt="Background" class="w-full h-full object-cover">
-            <img src="img/Rectangle 2.png" alt="Overlay" class="absolute inset-0 w-full h-full object-cover opacity-70">
-        </div>
+<body class="relative bg-[url(./img/foto.png)] bg-cover bg-no-repeat bg-center min-h-screen overflow-hidden">
 
-        <nav class="fixed top-5 left-5 right-5 bg-black bg-opacity-50 backdrop-blur-sm py-4 px-8 flex justify-between items-center border-b border-riot-gold border-opacity-20 z-50 rounded-2xl shadow-bottom-glow absolute">
-            <img src="./img/riot.png" alt="Riot Games Logo" class="h-10">
-            
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200 px-3 py-1">HOME</a></li>
-                <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200 px-3 py-1">STORE</a></li>
-                <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200 px-3 py-1">CHAMPION</a></li>
-                <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200 px-3 py-1">ABOUT</a></li>
-                <li><a href="#" class="text-riot-light hover:text-riot-gold transition duration-200 px-3 py-1">BLOG</a></li>
-            </ul>
-            
-            <div class="flex items-center space-x-6">
-                <div class="relative hidden md:block">
-                    <input 
-                        type="text" 
-                        
-                        class="bg-riot-dark border border-white border-opacity-30 py-1 px-4 pr-10 text-riot-light focus:outline-none focus:ring-1 focus:ring-riot-gold w-64 transition-all duration-200 rounded-2xl"
-                    >
-                    <button class="absolute left-2 top-1/2 transform -translate-y-1/2 text-white hover:text-riot-light ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
-                </div>
-                
-                <div class="relative">
-                    <button class="text-riot-light hover:text-riot-gold transition duration-200 p-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </button>
-                    <span class="absolute -top-2 -right-2 bg-riot-red text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                        3
-                    </span>
-                </div>
-            </div>
-        </nav>
+ 
+  <div class="fixed inset-0 bg-gradient-to-t from-[#F8F8AF]/100 to-transparent -z-50"></div>
+  <div class="fixed inset-0 bg-gradient-to-b from-[#000000]/25 to-transparent -z-50"></div>
 
-        <main class="relative min-h-screen">
+  <img src="./img/yasuo.svg" alt="Yasuo"
+    class="absolute bottom-0 w-full h-[100vh] md:h-[110vh] lg:h-[120vh] lg:scale-110 lg:-translate-x-10 object-cover -z-10" />
 
-            <div class="">
+  
+  <header class="w-[90%] mx-auto mt-6 bg-black/30 backdrop-blur-md rounded-lg flex items-center justify-between px-6 py-3 text-white top-72">
     
-            <div class="absolute inset-0 z-10 -left-3">
-                <img src="img/imagem.png" alt="Yasuo" class="w-full h-full object-contain">
-            </div>
-            
-        
-                <div class="flex items-center fixed relative  -right-80  top-72 text-5xl w-[600px]">
-                <h1 class=" font-beaufort font-bold text-white  tracking-wider ">
-                    THE UNFORGIVEN
-                </h1>
+    <div class="flex items-center">
+      <img src="./img/logo.svg" alt="Logo da Riot Games" class="h-9 pr-5 xl:h-6">
+    </div>
+
+    <menu>
+      <ul class="flex xl:items-center gap-1 font-medium">
+        <li>
+          <a href="#" class="px-3 py-1 md:block rounded text-4xl lg:text-base hover:bg-[#1c1c1f] text-white transition-all duration-500">HOME</a>
+        </li>
+
+        <li>
+          <a href="#" class="hidden md:block px-3 py-1 rounded text-4xl lg:text-base hover:bg-[#1c1c1f] text-white transition-all duration-500">STORE</a>
+        </li>
+
+        <li>
+          <a href="#" class="hidden md:block px-3 py-1 rounded text-4xl lg:text-base hover:bg-[#1c1c1f] text-white transition-all duration-500">CHAMPION</a>
+        </li>
+
+        <li>
+          <a href="#" class="hidden xl:block px-3 py-1 rounded text-4xl lg:text-base hover:bg-[#1c1c1f] text-white transition-all duration-500">ABOUT</a>
+        </li>
+
+        <li>
+          <a href="#" class="hidden xl:block px-3 py-1 rounded text-4xl lg:text-base hover:bg-[#1c1c1f] text-white transition-all duration-500">BLOG</a>
+        </li>
+
+        <div class="flex items-center gap-4">
+          <div class="hidden xl:bg-[#D9D9D9]/10 xl:to-transparent xl:px-3 xl:py-1 xl:rounded-md xl:flex xl:items-center xl:gap-2">
+            <img src="./img/lupa.svg" alt="Pesquisar" class="h-4 opacity-80">
+            <input type="text" placeholder="Search" class="bg-transparent text-sm placeholder-gray-400 outline-none text-white w-60">
+          </div>
+          <img src="./img/sacola.svg" alt="Carrinho" class="hidden xl:block h-6">
+        </div>
+      </ul>
+    </menu>
+  </header>
+
+  <main class="relative w-full min-h-screen px-4 pt-24 text-white flex flex-col items-center">
+
+    
+    <div class="flex flex-col lg:flex-row gap-[300px] items-center justify-center w-full max-w-6xl px-4 z-10">
+      <h2 class="hidden lg:block text-2xl md:text-4xl font-bold">THE UNFORGIVEN</h2>
+      <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold lg:relative lg:bottom-auto">YASUO</h1>
+    </div>
+
+   
+    <div class="hidden md:flex absolute left-[10%] top-[30%] lg:left-[5%] lg:top-[25%] flex-col items-center gap-0">
+      <span class="text-5xl md:text-8xl font-bold">ヤ</span>
+      <span class="text-5xl md:text-8xl font-bold">ス</span>
+      <span class="text-5xl md:text-8xl font-bold">オ</span>
+    </div>
+
+  
+    <div class="mt-10 md:absolute left-[10%] top-[70%] lg:left-[15%] lg:top-[65%] flex flex-col items-center">
+      <p class="hidden md:block text-2xl lg:text-3xl">— "Death is like the wind—always by my side."</p>
+    </div>
+
+   
+    <div class="mt-10 absolute right-[5%] top-[10%] md:right-[5%] md:top-[35%] lg:right-[10%] lg:top-[25%] flex flex-col gap-8 text-black xl:text-black items-center">
+    
+      <div class="flex flex-col items-center text-center">
+        <img src="./img/Mask-group.png
+        " alt="Ícone de Role" class="w-20 h-20 mb-1 xl:hidden">
+        <img src="./img/Mask group.png" alt="icone da rota" class="hidden xl:block w-10 h-10 mb-1">
+        <span class="text-4xl xl:text-base font-black">Role</span>
+        <span class="text-3xl xl:text-sm font-black">Fighter</span>
+      </div>
+
+      <div class="flex flex-col items-center text-center tex">
+        <img src="./img/Group 3.png" alt="Ícone de Dificuldade" class="w-20 h-20 mb-1 xl:hidden">
+        <img src="./img/icons.svg" alt="icone de dificuldade" class="hidden xl:block w-10 h-10 mb-1">
+        <span class="text-4xl xl:text-base font-black">Difficulty</span>
+        <span class="text-3xl xl:text-sm font-black">High</span>
+      </div>
+    </div>
+
+  </main>
 
 
-                </div>
-                <div class="flex justify-end items-center ">
-                <h2 class="text-[128px]  font-beaufort text-white  absolute top-40 right-[400px]">
-                    YASUO
-                </h2>
-                </div>
-                
-                
-                <div class="flex text-[28px] absolute justify-center items-center top-96 right-0.5 pr-[380px] z-20 text-white">
-                    <h1 class=" ">
-                    --"Death is like the wind—always by my side."
-                    </h1>
-                </div>
-                
-                <div class="flex justify-center  ">
-                <button class="top-[865px] bg-blue-400  hover:bg-blue-600 text-black font-beaufort font-bold py-[11px] px-[57px] rounded-sm transition duration-300 transform hover:scale-105 uppercase tracking-wider absolute z-20 ">
-                    DETAILS
-                </button>
-                <img src="./img/Group 1.png" alt="" class="z-20 top-[860px] absolute">
-                 </div>
+  <footer class="flex justify-center items-center mt-10 absolute bottom-20 lg:bottom-40 left-1/2 transform -translate-x-1/2 z-10">
+    <img src="./img/button.svg" class="cursor-pointer w-48 md:w-64 lg:w-auto">
+  </footer>
 
-                <div class="flex items-center justify-center relative -left-96 pr-96 top-80  ">
-                    <img src="./img/ヤ ス オ.png" alt="" class="">
-                </div>
-                <div>
-                    <div class="flex justify-center right-[265px] bottom-[430px] flex-col absolute text-black ">
-                        <img src="./img/Mask group.png" alt="" class="flex justify-center">
-                        <h1>Role</h1>
-                        <h2>Fighter</h2>
-                    </div>
-                    <div class="flex  flex-col absolute right-[265px] bottom-[330px] text-black">
-                        <img src="./img/Group 3.png" alt="">
-                        <h1>Difficulty</h1>
-                        <h1>High</h1>
-                    </div>
-                </div>
-
-            </div>
-        </main>
-    </body>
-    </html>
+</body>
+</html>

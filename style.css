@@ -1,1 +1,24 @@
-@import "tailwindcss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Beaufort for LOL Bold"; /* vários links para ser compativel em vários navegadores diferentes */
+  src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
+  src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#Beaufort for LOL Bold")format("svg");
+}
+.font-lol {
+    font-family: "Beaufort for LOL Bold";
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .monda {
+      font-family: 'Monda', sans-serif;
+  }
