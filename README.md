@@ -1,6 +1,15 @@
 # Riot Games
 Este é um site desenvolvido para a Situação de Aprendizem somativa, que exigia o uso do framework Tailwind, e responsividade para Desktop, Tablet e Mobile.
 
+## DESKTOP
+![](./img/desktop.png)
+
+## TABLET
+![](./img/tablet.png)
+
+## MOBILE
+![](./img/mobile.png)
+
 ## Tecnologias utilizadas
  * HTML
  * Tailwind
@@ -10,7 +19,7 @@ Este é um site desenvolvido para a Situação de Aprendizem somativa, que exigi
 
   ## Como rodar localmente?
  Apos o Visual Studio Code Instalado, você ira selecionar abrir ou criar uma pasta, instale a extensão Live Server, na aba do projeto clique no Go Live localizado no canto inferior direito.
- Para ver as outras versões,dentro da página, clique com o botão direito e vá em "Inspecionar" em cima da página estará escrito "Dimensions Responsive" clique nele e aparecerá as opções de visualizar em telas de outros aparelhos.
+
 
   ## Autor
 * PAULO VINICIUS
